@@ -65,6 +65,19 @@ h4 {
     letter-spacing: 10px;
 }
 
+h5 {
+    font-family: 'BlackPink-Cursive-Demo';
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+
+h6 {
+    font-family: 'BlackPink-Cursive-Demo';
+    font-size: 50px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+}
+
 p {
     font-size: 20px;
     letter-spacing: 1px;
@@ -137,24 +150,6 @@ video {
 	color:black;
     transition: 0.5 ease;
 }
-
-.btn-pink {
-    background-color: #F1ABB9;
-    border: solid 1px #F1ABB9;
-    color: black;
-    border-radius: 10px;
-    margin: 0px 20px;
-    transition: 0.5 ease;
-}
-
-.btn-pink:hover {
-	opacity: 0.9;
-	background-color: #F1ABB9;
-	border-color: #F1ABB9;
-	color:black;
-    transition: 0.5 ease;
-}
-
 
 /*owl	 carousel styles*/
 .owl-theme .owl-controls{

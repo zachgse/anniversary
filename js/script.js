@@ -36,3 +36,40 @@ yesBtn.addEventListener("click", ()=>{
     yesBtn.style.display = "none";
     noBtn.style.display = "none";
 });
+
+const timer = () => {
+    let firstDay = new Date(2017, 08, 15, 00, 00);
+    let currentDate = new Date();
+    let timeElapsed= currentDate - firstDay;
+    let days = Math.floor((timeElapsed) / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((timeElapsed) / (1000 * 60 * 60) % 24);
+    
+    if (hours < 10) {
+        hours = "0" + hours;
+    }
+
+    let minutes = Math.floor((timeElapsed) / (1000 * 60) % 60);
+
+    if (minutes < 10) {
+        minutes = "0" + minutes;
+    }
+
+    let seconds = Math.floor((timeElapsed) / (1000) % 60);
+
+    if (seconds < 10) {
+        seconds = "0" + seconds;
+    }
+
+    document.getElementById("time-days").innerText = days;
+    document.getElementById("time-hours").innerText = hours;
+    document.getElementById("time-minutes").innerText = minutes;
+    document.getElementById("time-seconds").innerText = seconds;
+};
+
+const startTimer = () => {
+    timer();
+    window.setInterval("timer()", 1);
+};
+
+startTimer();
+
